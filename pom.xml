@@ -38,7 +38,7 @@
           <artifactId>maven-checkstyle-plugin</artifactId>
           <version>3.1.2</version>
           <configuration>
-            <failsOnError>false</failsOnError>
+            <failsOnError>true</failsOnError>
             <configLocation>google_checks.xml</configLocation>
           </configuration>
         </plugin>
@@ -56,7 +56,7 @@
           </dependencies>
           <configuration>
             <xmlOutput>true</xmlOutput>
-            <failOnError>false</failOnError>
+            <failOnError>true</failOnError>
           </configuration>
         </plugin>
       </plugins>

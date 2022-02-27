@@ -38,7 +38,9 @@ jobs:
       #- uses: jwgmeligmeyling/checkstyle-github-action@master
       #  with:
       #    path: "**/checkstyle-result.xml"
-      - name: Spotbugs
+      - name: Spotbugs check
+        run: mvn -B verify compile spotbugs:check
+      - name: Spotbugs report
         run: mvn -B verify compile spotbugs:spotbugs
       - uses: jwgmeligmeyling/spotbugs-github-action@master
         with:

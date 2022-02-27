@@ -38,6 +38,5 @@ jobs:
       - uses: jwgmeligmeyling/spotbugs-github-action@master
         with:
           path: "**/spotbugsXml.xml"
-        run: mvn -B verify pmd:check
       - name: Spotbugs check
         run: mvn -B verify compile spotbugs:check

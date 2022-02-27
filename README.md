@@ -1,6 +1,6 @@
 # Continuous Integration with Github Actions
 
-![Checkstyle](https://github.com/enriquemolinari/static-analysis/actions/workflows/checkstyle.yml/badge.svg) ![PMD](https://github.com/enriquemolinari/static-analysis/actions/workflows/spotbugs.yml/badge.svg) ![Spotbugs](https://github.com/enriquemolinari/static-analysis/actions/workflows/pmd.yml/badge.svg) [![Maintainability](https://api.codeclimate.com/v1/badges/0f70b90190bf2b073c19/maintainability)](https://codeclimate.com/github/enriquemolinari/static-analysis/maintainability)
+![Checkstyle](https://github.com/enriquemolinari/static-analysis/actions/workflows/checkstyle.yml/badge.svg) ![PMD](https://github.com/enriquemolinari/static-analysis/actions/workflows/pmd.yml/badge.svg) ![Spotbugs](https://github.com/enriquemolinari/static-analysis/actions/workflows/spotbugs.yml/badge.svg) [![Maintainability](https://api.codeclimate.com/v1/badges/0f70b90190bf2b073c19/maintainability)](https://codeclimate.com/github/enriquemolinari/static-analysis/maintainability)
 
 This is just to demosntrate a CI environment using Github Actions. We are running static analysis using maven, with several plugins:
 

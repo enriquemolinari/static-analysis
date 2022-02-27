@@ -33,18 +33,18 @@ jobs:
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: |
             ${{ runner.os }}-maven-
-      - name: Checkstyle
-        run: mvn -B verify checkstyle:checkstyle
-      - uses: jwgmeligmeyling/checkstyle-github-action@master
-        with:
-          path: "**/checkstyle-result.xml"
+      #- name: Checkstyle
+      #  run: mvn -B verify checkstyle:check checkstyle:checkstyle
+      #- uses: jwgmeligmeyling/checkstyle-github-action@master
+      #  with:
+      #    path: "**/checkstyle-result.xml"
       - name: Spotbugs
-        run: mvn -B verify spotbugs:spotbugs
+        run: mvn -B verify compile spotbugs:check
       - uses: jwgmeligmeyling/spotbugs-github-action@master
         with:
           path: "**/spotbugsXml.xml"
-      - name: PMD
-        run: mvn -B verify pmd:pmd
-      - uses: jwgmeligmeyling/pmd-github-action@master
-        with:
-          path: "**/pmd.xml"
+      #- name: PMD
+      #run: mvn -B verify pmd:check pmd:pmd
+      #- uses: jwgmeligmeyling/pmd-github-action@master
+      #  with:
+      #    path: "**/pmd.xml"

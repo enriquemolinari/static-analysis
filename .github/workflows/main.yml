@@ -39,7 +39,7 @@ jobs:
       #  with:
       #    path: "**/checkstyle-result.xml"
       - name: Spotbugs
-        run: mvn -B verify compile spotbugs:spotbugs
+        run: mvn -B verify compile spotbugs:check spotbugs:spotbugs
       - uses: jwgmeligmeyling/spotbugs-github-action@master
         with:
           path: "**/spotbugsXml.xml"

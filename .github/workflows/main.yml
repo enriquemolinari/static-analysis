@@ -38,13 +38,13 @@ jobs:
       #- uses: jwgmeligmeyling/checkstyle-github-action@master
       #  with:
       #    path: "**/checkstyle-result.xml"
-      - name: Spotbugs check
-        run: mvn -B verify compile spotbugs:check
       - name: Spotbugs report
         run: mvn -B verify compile spotbugs:spotbugs
       - uses: jwgmeligmeyling/spotbugs-github-action@master
         with:
           path: "**/spotbugsXml.xml"
+      - name: Spotbugs check
+        run: mvn -B verify compile spotbugs:check
       #- name: PMD
       #run: mvn -B verify pmd:check pmd:pmd
       #- uses: jwgmeligmeyling/pmd-github-action@master

@@ -40,7 +40,7 @@ jobs:
         with:
           path: "**/checkstyle-result.xml"
       - name: PMD Report
-        run: mvn -B verify pmd:check pmd:pmd
+        run: mvn -B verify pmd:pmd
       - uses: jwgmeligmeyling/pmd-github-action@master
         with:
           path: "**/pmd.xml"

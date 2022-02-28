@@ -1,14 +1,14 @@
 # Continuous Integration with Github Actions
 
-![Checkstyle](https://github.com/enriquemolinari/static-analysis/actions/workflows/checkstyle.yml/badge.svg) ![PMD](https://github.com/enriquemolinari/static-analysis/actions/workflows/pmd.yml/badge.svg) ![Spotbugs](https://github.com/enriquemolinari/static-analysis/actions/workflows/spotbugs.yml/badge.svg)[![codecov](https://codecov.io/gh/enriquemolinari/static-analysis/branch/main/graph/badge.svg?token=K8NLEOA3WN)](https://codecov.io/gh/enriquemolinari/static-analysis) [![Maintainability](https://api.codeclimate.com/v1/badges/0f70b90190bf2b073c19/maintainability)](https://codeclimate.com/github/enriquemolinari/static-analysis/maintainability)
+![Checkstyle](https://github.com/enriquemolinari/static-analysis/actions/workflows/checkstyle.yml/badge.svg) ![PMD](https://github.com/enriquemolinari/static-analysis/actions/workflows/pmd.yml/badge.svg) ![Spotbugs](https://github.com/enriquemolinari/static-analysis/actions/workflows/spotbugs.yml/badge.svg) [![codecov](https://codecov.io/gh/enriquemolinari/static-analysis/branch/main/graph/badge.svg?token=K8NLEOA3WN)](https://codecov.io/gh/enriquemolinari/static-analysis) [![Maintainability](https://api.codeclimate.com/v1/badges/0f70b90190bf2b073c19/maintainability)](https://codeclimate.com/github/enriquemolinari/static-analysis/maintainability)
 
 ![continuous-integration](https://user-images.githubusercontent.com/11150895/155978021-9cf451af-15bd-4f68-894e-d5e7aae02984.png)
 
 En este repositorio simplemente demostramos como utilizar Github actions para incorporar integración continua a nuestro proyecto. Utilizando maven, corremos test de JUnit y análisis estático:
 
-- [Checkstyle](https://maven.apache.org/plugins/maven-checkstyle-plugin/examples/custom-checker-config.html). Using [Google style](https://google.github.io/styleguide/javaguide.html).
-- [PMD](https://maven.apache.org/plugins/maven-pmd-plugin/). Using these [PMD Rules](https://pmd.github.io/latest/pmd_rules_java.html), except documentation.
-- [Spotbugs](https://spotbugs.github.io/spotbugs-maven-plugin/). Using these [Spotbugs Rules](https://spotbugs.readthedocs.io/en/stable/bugDescriptions.html).
+- [Checkstyle](https://maven.apache.org/plugins/maven-checkstyle-plugin/examples/custom-checker-config.html). Utilizamos la guía de estilos de [Google](https://google.github.io/styleguide/javaguide.html).
+- [PMD](https://maven.apache.org/plugins/maven-pmd-plugin/). Utilizamos las siguientes reglas [PMD Rules](https://pmd.github.io/latest/pmd_rules_java.html), excepto las relacionadas con la documentation (javadoc).
+- [Spotbugs](https://spotbugs.github.io/spotbugs-maven-plugin/). Éstas son las reglas que spotbugs verifica: [Spotbugs Rules](https://spotbugs.readthedocs.io/en/stable/bugDescriptions.html).
 
 También utilizamos el plugin de maven [Jacoco](https://www.eclemma.org/jacoco/trunk/doc/maven.html) para generar reportes de covertura de código. Luego, enviamos los reportes mediante una acción de Github a [Codecov](https://about.codecov.io/), para mostrar el badge con el porcentaje de covertura.
 

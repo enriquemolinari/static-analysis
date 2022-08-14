@@ -1,7 +1,5 @@
 package epm;
 
-import static org.junit.Assert.assertTrue;
-
 import org.junit.Test;
 
 public class AppTest {
@@ -13,6 +11,6 @@ public class AppTest {
 
     };
 
-    v.foo(new String[] {"something"});
+    v.Foo(new String[] { "something" });
   }
 }

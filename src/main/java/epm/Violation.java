@@ -7,7 +7,7 @@ public abstract class Violation {
     System.out.println("print..." + this.blabla);
   }
 
-  public void foo(String[] param) {
+  public void Foo(String[] param) {
     int abc;
     System.out.println("asdf");
     // Don't do this, make a copy of the array at least

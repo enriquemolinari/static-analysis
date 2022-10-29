@@ -9,9 +9,9 @@ public abstract class Violation {
 
   public void Foo(String[] param) {
     int abc;
-    System.out.println("asdf");
-    // Don't do this, make a copy of the array at least
     this.blabla = param;
+    // fixing above code
+    // this.blabla = List.of(param).toArray(new String[param.length]);
 
   }
 }

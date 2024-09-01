@@ -1,4 +1,5 @@
 # Continuous Integration with Github Actions
+[![Quality Gate Status](https://ppsonarqube.unrn.edu.ar/api/project_badges/measure?project=enriquemolinari_static-analysis_68d931fd-df17-4931-b70c-a593b9046db5&metric=alert_status&token=sqb_6f3d293eb774a7df688aa6fe21ddf8fc8cf7f69a)](https://ppsonarqube.unrn.edu.ar/dashboard?id=enriquemolinari_static-analysis_68d931fd-df17-4931-b70c-a593b9046db5)
 
 ![Checkstyle](https://github.com/enriquemolinari/static-analysis/actions/workflows/checkstyle.yml/badge.svg) ![PMD](https://github.com/enriquemolinari/static-analysis/actions/workflows/pmd.yml/badge.svg) ![Spotbugs](https://github.com/enriquemolinari/static-analysis/actions/workflows/spotbugs.yml/badge.svg) [![codecov](https://codecov.io/gh/enriquemolinari/static-analysis/branch/main/graph/badge.svg?token=K8NLEOA3WN)](https://codecov.io/gh/enriquemolinari/static-analysis) [![Maintainability](https://api.codeclimate.com/v1/badges/0f70b90190bf2b073c19/maintainability)](https://codeclimate.com/github/enriquemolinari/static-analysis/maintainability)
 

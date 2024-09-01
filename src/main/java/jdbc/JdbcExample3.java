@@ -31,4 +31,15 @@ public class JdbcExample3 {
             throw new RuntimeException(e);
         }
     }
+
+    private Connection connection2() {
+        String url = "jdbc:mysql://" + dbServer + ":" + dbPort + "/" + dbName;
+        String user = this.user;
+        String password = this.pwd;
+        try {
+            return DriverManager.getConnection(url, user, password);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
